@@ -1,0 +1,5 @@
+- points = [[1,2], [3,4]]
+%body
+	%svg{ xmlns:"http://www.w3.org/2000/svg" }
+		- points.each do |x,y|
+			%circle{ x:x, y:y, r:3}

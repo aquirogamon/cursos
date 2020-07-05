@@ -1,0 +1,11 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "username": "",
+  "password": "",
+  "database": "typeormts",
+  "entities": ["dist/entity/**/**.js"],
+  "synchronize": true,
+  "useUnifiedTopology": true
+}

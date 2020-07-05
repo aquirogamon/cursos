@@ -1,0 +1,15 @@
+.rojo {
+  color: red;
+}
+
+ul.verde li{
+  color: green;
+}
+
+p.marron {
+  color: brown;
+}
+
+h4.rojo span.azul {
+  color: blueviolet;
+}

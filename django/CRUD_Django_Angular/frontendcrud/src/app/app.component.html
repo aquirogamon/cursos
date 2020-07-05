@@ -1,0 +1,13 @@
+<h1>List of Movies</h1>
+<ul>
+  <li *ngFor="let movie of movies">
+    <h3 (click)="movieClicked(movie)">{{ movie.title }}</h3>
+  </li>
+</ul>
+<hr />
+Title <input type="text" [(ngModel)]="selectedMovie.title" /><br />
+Description <input type="text" [(ngModel)]="selectedMovie.description" /><br />
+Year <input type="text" [(ngModel)]="selectedMovie.year" /><br />
+<button *ngIf="selectedMovie.id != -1" (click)="updateMovie()">PUT</button>
+<button *ngIf="selectedMovie.id == -1" (click)="createMovie()">CREATE</button>
+<button *ngIf="selectedMovie.id != -1" (click)="deleteMovie()">DELETE</button>
