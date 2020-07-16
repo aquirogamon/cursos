@@ -21,17 +21,17 @@ const argv = require('yargs')
     .command('borrar', 'Borrar una tarea', {
         descripcion
     })
-    // .command('listar', 'Listar tareas completadas o pendientes', {
-    //     completado: {
-    //         alias: 'c',
-    //         description: 'Lista las tareas completadas o pendientes'
-    //     },
-    //     listado: {
-    //         alias: 'l',
-    //         default: true,
-    //         description: 'Lista las tareas completadas o pendientes'
-    //     }
-    // })
+    .options({
+        completado: {
+            alias: 'c',
+            description: 'Lista las tareas completadas o pendientes'
+        },
+        listado: {
+            alias: 'l',
+            default: true,
+            description: 'Lista las tareas completadas o pendientes'
+        }
+    })
     .help()
     .argv;
 
